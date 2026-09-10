@@ -1,0 +1,17 @@
+import torch
+a = torch.rand(3, 4)
+b = torch.randn(3, 4   )
+c = torch.zeros(2, 3)
+d = torch.ones(2, 3)
+e = torch.eye(4)
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print("\nĐánh Giá tourch.rand() và tourch.randn(): ")
+print("tourch.rand() tạo ra các số thực ngẫu nhiên Phân phối đều (Uniform) trong khoảng [0;1)")
+print("tourch.randn() tạo ra các số thực ngẫu nhiên Phân phối chuẩn (Normal) trong khoảng (-oo;+oo)")
+tensor_10 = torch.full((5, 5), 10)
+# Cánh khác: tensor_10 = torch.ones(5, 5) * 10
+print("\nTensor 5x5 chứa toàn giá trị 10:\n", tensor_10)
